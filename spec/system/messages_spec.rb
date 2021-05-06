@@ -4,6 +4,7 @@ RSpec.describe "メッセージ投稿機能", type: :system do
   before do
     # 中間テーブルを作成して、usersテーブルとroomsテーブルのレコードを作成する
     @room_user = FactoryBot.create(:room_user)
+    binding.pry
   end
 
   context '投稿に失敗したとき' do

@@ -1,4 +1,5 @@
 class MessagesController < ApplicationController
+  require 'rmagick'
   def index
     @message = Message.new
     @room = Room.find(params[:room_id])
